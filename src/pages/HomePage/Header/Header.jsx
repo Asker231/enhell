@@ -8,18 +8,25 @@ import ClearIcon from '@mui/icons-material/Clear';
 import { removeUser } from '../../../redux/userSlice/userSlice.js'
 
 
+
+
 const Header = () => {
     const disp = useDispatch();
     const { email } = useSelector(state => state.users)
     const [out, setOut] = useState(false);
+    const [menu, setMenu] = useState(false);
+    const pass = style.outIcon;
     return (
         <div className={style.header}>
             <h4>EnHell</h4>
-            <MenuIcon className={style.menu} />
+            <MenuIcon onClick={() => setMenu(!menu)} className={style.menu} />
 
             <div className={style.right}>
 
-                <AccountCircleSharpIcon onClick={() => setOut(!out)} className={style.outIcon} />
+                <AccountCircleSharpIcon 
+                    onClick={() => setOut(!out)}
+                    className={style.outIcon}
+                     />
                 {
                     out ? <p className={style.outVis}><p>{email}</p>
                         <ExitToAppIcon
@@ -30,19 +37,26 @@ const Header = () => {
                         : null
                 }
             </div>
-            <div className={style.setting}>
-                <ClearIcon className={style.clear} />
+
+            {menu ? <div className={style.setting}>
+                <ClearIcon className={style.clear}
+                onClick={() => setMenu(!menu)}
+                />
                 <div className={style.settingHeader}>
                     <AccountCircleSharpIcon className={style.userIcon} />
                     <div className={style.emailOut}>
-                        <p>scnsodkm;xapos</p>
-                        <ExitToAppIcon className={style.exit} />
+                        <p>{email}</p>
+                        <ExitToAppIcon
+                            
+                            className={style.exit} />
                     </div>
 
                 </div>
 
 
             </div>
+                : null
+            }
 
         </div>
     )
