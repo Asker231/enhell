@@ -29,4 +29,8 @@
 }
 .userinform_header>.avatar{
     cursor: pointer;
+}.userinform>.userinform_header>.nameuser:nth-child(1)::first-letter{
+   text-transform:uppercase;
+}.nameuser:nth-child(2)::first-letter{
+    text-transform: uppercase;
 }

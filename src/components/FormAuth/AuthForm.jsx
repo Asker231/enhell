@@ -28,7 +28,9 @@ const AuthForm = ({title,path,func,btnTitle,link}) => {
             label='Ваше имя...'
             value={name}
             onChange={(e)=>setName(e.target.value)}
-            variant='standard' />
+            variant='standard'
+          
+            />
            <TextField
             type='text'
             id="standard-basic"

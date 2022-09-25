@@ -10,7 +10,7 @@ const UserInform = () => {
         <div className={style.userinform_header}>
         <Avatar className={style.avatar} src="/broken-image.jpg" />
         <div className={style.nameuser}>
-            <div>{name}</div>
+            <div >{name}</div>
             <div>{secondname}</div>
         </div>
         </div>

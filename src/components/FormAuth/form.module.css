@@ -11,7 +11,9 @@
     background:linear-gradient(134deg,rgb(172, 231, 249) ,rgb(186, 224, 248)) ;
 }
 .form>a{
+    
     text-align: center;
     text-decoration: none;
     color: blue;
+    
 }
