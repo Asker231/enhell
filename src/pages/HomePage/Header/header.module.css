@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    padding: 5px 10px;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+}.header>.right>.outIcon{
+    font-size: 40px;
+    cursor: pointer;
+}
+.header>.right{
+    display: flex;
+    justify-content: space-between;
+}
+.header>.right>.outVis{
+    color: black;
+    top: 12px;
+    right: 55px;
+    background-color: aqua;
+    padding: 3px 7px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}.header>.right>.outVis>.accOut{
+    cursor: pointer;
+}
+@media (max-width:426px) {
+
+    .header>.right,.outIcon{
+        display: none;
+    }
+    
+}
+.header>.menu{
+    display: none;
+    
+}
+@media (max-width:426px) {
+    .header{
+        justify-content: space-between;
+    }
+    .header>.menu{
+        display: block;
+        cursor: pointer;
+        font-size: 40px;
+    }
+}
+.header>.setting{
+    display: none;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: rgb(253, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px 0px 0px;
+    
+
+}
+.setting>.clear{
+    cursor: pointer;
+}
+.header>.setting>.settingHeader{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height:10%;
+    padding: 5px;
+    border-radius: 15px;
+}.settingHeader>.userIcon{
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 30px;
+    background-color: rgb(252, 251, 253);
+}
+
+.settingHeader>.emailOut{
+    display: flex;
+    flex-direction: column;
+    max-height:min-content;
+
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: rgb(9, 9, 9);
+}.emailOut>p{
+    background-color: #fff;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    max-width: 98%;
+}.emailOut>.exit{
+    cursor: pointer;
+}
