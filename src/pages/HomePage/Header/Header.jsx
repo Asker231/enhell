@@ -30,7 +30,6 @@ const Header = () => {
                         : null
                 }
             </div>
-
             <div className={style.setting}>
                 <ClearIcon className={style.clear} />
                 <div className={style.settingHeader}>

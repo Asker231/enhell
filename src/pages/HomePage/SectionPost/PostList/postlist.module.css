@@ -1,0 +1,20 @@
+.posts{
+  background-color: rgb(21, 21, 21);
+  max-width: 50%;
+  max-height: 180px;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.postList{
+    padding-top: 120px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
