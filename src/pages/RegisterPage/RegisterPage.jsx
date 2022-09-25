@@ -19,14 +19,11 @@ const nav = useNavigate();
       disp(addUser({
         email:user.email,
         id:user.uid,
-        
-      }));
-      nav('/')
-    }) .then(()=>{
-      disp(addUser({
         name:name,
         secondname:secondname,
-      }))
+      }));
+      nav('/')
+   
     }) 
   }
   return (
