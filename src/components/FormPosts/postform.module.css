@@ -3,15 +3,26 @@
     flex-direction: column;
     gap: 30px;
     border: 1px solid #fff;
-    width: 60%;
+    width: 68%;
     padding: 20px;
     background-color: rgb(254, 255, 255);
     border-radius: 20px;
 
    
-}.postform>input{
+}
+@media (max-width:400px) {
+    .postform{
+        width: 90%;
+    }
+}
+.postform>input{
     color: #fff;
     border: 1px solid #fff;
-}.postform>.upload{
+}.postform>.bottom>.upload{
     max-width: 40px;
+}.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

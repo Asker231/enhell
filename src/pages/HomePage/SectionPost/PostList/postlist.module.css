@@ -8,6 +8,12 @@
   color: #fff;
 
 }
+@media (max-width:500px) {
+    .posts{
+      max-width: 35%;
+      max-height: 140px;
+    }
+}
 
 .postList{
     padding-top: 120px;
