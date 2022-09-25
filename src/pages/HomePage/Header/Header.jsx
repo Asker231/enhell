@@ -47,7 +47,7 @@ const Header = () => {
                     <div className={style.emailOut}>
                         <p>{email}</p>
                         <ExitToAppIcon
-                            
+                             onClick={()=>disp(removeUser())}
                             className={style.exit} />
                     </div>
 
