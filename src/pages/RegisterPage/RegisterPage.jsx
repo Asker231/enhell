@@ -6,6 +6,7 @@ import style from './reg.module.css';
 import {getAuth,createUserWithEmailAndPassword}from 'firebase/auth'
 import { addUser } from '../../redux/userSlice/userSlice';
 import { useNavigate} from 'react-router-dom';
+import AnimeteLogo from '../../components/animatelogo/AnimeteLogo';
 
 const RegisterPage = () => {
   
@@ -28,6 +29,7 @@ const nav = useNavigate();
   }
   return (
     <div className={style.register}>
+     <AnimeteLogo/>
         <AuthForm func={hendleAuth}
         title='Регистрация'
         path='/LoginPage'

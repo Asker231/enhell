@@ -5,6 +5,7 @@ import {getAuth,signInWithEmailAndPassword} from 'firebase/auth'
 import { useDispatch } from 'react-redux';
 import {addUser} from '../../redux/userSlice/userSlice.js';
 import { useNavigate } from 'react-router-dom';
+import AnimeteLogo from '../../components/animatelogo/AnimeteLogo';
 const LoginPage = () => {
    const nav = useNavigate();
    const disp = useDispatch();
@@ -25,6 +26,7 @@ const LoginPage = () => {
 
   return (
     <div className={style.login}>
+      <AnimeteLogo/>
     <AuthForm
     title='Войдите'
     link='или регистрация'
