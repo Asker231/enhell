@@ -4,7 +4,7 @@
     width: 100%;
     justify-content: space-around;
     padding: 5px 10px;
-    background-color: #fff;
+    background-color:#65e5fe;
     align-items: center;
     position: fixed;
     z-index: 10;
@@ -20,6 +20,8 @@
 .header>.right{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 .header>.right>.outVis{
     color: black;

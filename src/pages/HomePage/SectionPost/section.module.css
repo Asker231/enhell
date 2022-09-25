@@ -19,4 +19,9 @@
     right: 4%;
 }.link>.plus{
     font-size: 50px;
+    transition: .7s;
+}.link>.plus:hover{
+     transform: rotate(360deg);
+    font-size: 80px;
+ color: rgb(79, 229, 252);
 }
