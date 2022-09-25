@@ -11,17 +11,23 @@ const RegisterPage = () => {
   
 const nav = useNavigate();
   const disp = useDispatch();
-  const hendleAuth = (email,password)=>{
+  const hendleAuth = (email,password,name,secondname)=>{
     const auth = getAuth();
     createUserWithEmailAndPassword(auth,email,password)
     .then(({user})=>{
       console.log(user);
       disp(addUser({
         email:user.email,
-        id:user.uid
+        id:user.uid,
+        
       }));
       nav('/')
-    })  
+    }) .then(()=>{
+      disp(addUser({
+        name:name,
+        secondname:secondname,
+      }))
+    }) 
   }
   return (
     <div className={style.register}>
