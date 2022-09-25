@@ -1,0 +1,17 @@
+.postform{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #fff;
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(254, 255, 255);
+    border-radius: 20px;
+
+   
+}.postform>input{
+    color: #fff;
+    border: 1px solid #fff;
+}.postform>.upload{
+    max-width: 40px;
+}
