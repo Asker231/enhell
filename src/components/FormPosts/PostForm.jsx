@@ -27,13 +27,13 @@ const PostForm = () => {
         <TextField
          id="filled-basic"  
         value={title} 
-        label="Filled" 
+        label="Введите ваш заголовок...." 
         variant="filled"
         onChange={(e)=>setTitle(e.target.value)}
         />
         <TextField
           id="filled-multiline-static"
-          label="Multiline"
+          label="Введите ваш текст..."
           multiline
           rows={4}
         value={text}
