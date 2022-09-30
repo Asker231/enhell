@@ -9,7 +9,7 @@ const postSlice = createSlice({
       addPost(state,action){
         state.arr.push(action.payload);
       },removePost(state,action){
-        state.arr = state.arr.filter((el)=>el.id !== action.payload)
+         state.arr=state.arr.filter((el)=>el.id !== action.payload)
       }
     }
 })
