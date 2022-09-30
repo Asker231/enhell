@@ -1,8 +1,12 @@
 import React from 'react'
+import Navigate from '../../components/navigate/Navigate'
 
 const PhotoGaleryPage = () => {
   return (
-    <div>PhotoGaleryPage</div>
+    <div>PhotoGaleryPage
+
+      <Navigate/>
+    </div>
   )
 }
 

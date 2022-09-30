@@ -26,12 +26,11 @@
     border-radius: 100%;
     transition: .4s;
 }
-.nav>.usericon{
+.nav>a>.usericon{
     transition: .2s;
 }
-.nav>.usericon:hover{
+.nav>a>.usericon:hover{
     cursor: pointer;
-
     border: 3px solid #fff;
 }.nav>a:hover{
   color: aqua;

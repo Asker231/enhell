@@ -20,7 +20,6 @@ const disp = useDispatch();
           <div className={style.wrap}>
             <img  src='https://oxvo.ru/wp-content/uploads/2018/06/post_5b33514f8e88d.jpeg' alt='image'/>
                <h1>{el.title}</h1>
-               <p>{el.text}</p> 
           </div>
            
           

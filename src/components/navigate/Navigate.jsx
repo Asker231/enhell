@@ -10,7 +10,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 const Navigate = () => {
   return (
     <div className={style.nav}>
-       <Avatar className={style.usericon} src="/broken-image.jpg" />
+       <Link to='/'><Avatar className={style.usericon} src="/broken-image.jpg" /></Link> 
        <Link to='/MessagePage'><EmailIcon/></Link>
        <Link to='/FrendsPage'><GroupIcon/></Link>
        <Link to='/PhotoGaleryPage'><InsertPhotoIcon/></Link>
