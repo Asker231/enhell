@@ -4,10 +4,11 @@
     width: 100%;
     justify-content: space-around;
     padding: 5px 10px;
-    background-color:#65e5fe;
+    background-color:rgb(0, 30, 60);
     align-items: center;
     position: fixed;
     z-index: 10;
+    color: #fff;
 
 }
 .header>h4{

@@ -21,13 +21,13 @@ const Header = () => {
   return (
     <div className={style.header}>
       <h4>
-        enne<span style={{color:'#fff', backgroundColor: `#${color}`, fontWeight: "700",padding:'2px 4px',borderRadius:'10px' }}>LL</span>
+        enne<span style={{color:'black', backgroundColor: `#${color}`, fontWeight: "700",padding:'2px 4px',borderRadius:'10px' }}>LL</span>
       </h4>
       <MenuIcon onClick={() => setMenu(!menu)} className={style.menu} />
       <div className={style.right}>
         <Link to='/MessagePage'>
         <Badge badgeContent={4} color="primary">
-         <MailIcon style={{cursor:'pointer'}} color="action" />
+         <MailIcon style={{cursor:'pointer',color:'#fff'}} color="action" />
       </Badge>
         </Link>
       
