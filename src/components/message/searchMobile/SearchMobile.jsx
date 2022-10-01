@@ -5,12 +5,11 @@ import SearchIcon from '@mui/icons-material/Search';
 const SearchMobile = () => {
   return (
     <div className={style.search}>
-      
-          <TextField 
-             className={style.searchs}
-             id="outlined-search"
-             label="Search"
-             type="search" />
+
+<TextField id="filled-basic" 
+className={style.searchs}
+label="Search" variant="filled" />
+          
 
              <SearchIcon className={style.icon}/>
              
