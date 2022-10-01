@@ -7,6 +7,8 @@ import { useDispatch } from 'react-redux';
 import  Button  from '@mui/material/Button';
 import {addPost} from '../../redux/postSlice/postSlice.js';
 import { v4 } from 'uuid';
+import {set,ref} from 'firebase/database';
+import {db} from '../../firebase.js';
 
 
 const PostForm = () => {
@@ -20,7 +22,17 @@ const PostForm = () => {
     id:v4()
 
   }
-  
+
+  //write
+  const writeDB=()=>{
+    const id = v4();
+    set(ref(db,`/${id}`),{
+      title,
+      text,
+      id
+    });
+  }
+
 
   return (
     <div className={style.postform}>
@@ -36,7 +48,7 @@ const PostForm = () => {
           label="Введите ваш текст..."
           multiline
           rows={4}
-        value={text}
+          value={text}
           variant="filled"
           onChange={(e)=>setText(e.target.value)}
         />
@@ -46,6 +58,7 @@ const PostForm = () => {
   <PhotoCamera />
  </IconButton>
   <Button onClick={()=>{
+    writeDB()
     disp(addPost(data))
     setText('');
     setTitle('');

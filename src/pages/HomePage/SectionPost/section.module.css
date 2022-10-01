@@ -4,16 +4,13 @@
     min-height: 100%;
     display: flex;
     justify-content: center;
-
     width: 100%;
 
 }
 .section>.link>.plus{
-    display: none;
-}
-.section>.link>.plus{
     position: fixed;
     bottom: 100px;
+    right: 120px;
 }
 
 .section>.link>.plus{
@@ -23,11 +20,12 @@
     
 }.section>.link>.plus:hover{
      transform: rotate(360deg);
-
-    color: rgb(79, 229, 252);
+     font-size: 70px;
+     color: rgb(79, 229, 252);
 }
-@media (max-width:425px) {
+@media (max-width:787px) {
     .section>.link>.plus{
         display: block;
+        right: 10px;
     }
 }

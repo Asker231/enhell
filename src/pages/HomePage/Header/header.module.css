@@ -23,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+
 }
 .header>.right>.outVis{
     color: black;
@@ -33,6 +34,7 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+
     gap: 10px;
 }.header>.right>.outVis>.accOut{
     cursor: pointer;
