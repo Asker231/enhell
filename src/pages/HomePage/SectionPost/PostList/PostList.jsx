@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 //import { v4 } from 'uuid';
 //import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 //import { postList } from './post.props'
 //import { removePost } from '../../../../redux/postSlice/postSlice';
 import style from './postlist.module.css';
@@ -10,7 +10,7 @@ import {onValue,ref,} from 'firebase/database';
 import {db} from '../../../../firebase.js';
 
 const PostList = ({id}) => {
-const {title,text} = useSelector((state)=>state.posts.arr)
+//const {title,text} = useSelector((state)=>state.posts.arr)
  //const disp = useDispatch();
  //const[list]=useState(postList)
  const[todos,setTodos] = useState([])
