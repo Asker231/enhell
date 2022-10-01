@@ -7,6 +7,9 @@ import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SettingsIcon from '@mui/icons-material/Settings';
 import Avatar from '@mui/material/Avatar';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+
+
+
 const Navigate = () => {
   return (
     <div className={style.nav}>

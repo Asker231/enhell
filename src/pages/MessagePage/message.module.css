@@ -1,0 +1,7 @@
+.messagePage{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    height: 100vh;
+}

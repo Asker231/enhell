@@ -52,6 +52,11 @@ const Header = () => {
             <ClearIcon className={style.clear} onClick={() => setMenu(!menu)} />
             <div className={style.settingHeader}>
               <AccountCircleSharpIcon className={style.userIcon} />
+              <Link to='/MessagePage'>
+        <Badge badgeContent={4} color="primary">
+         <MailIcon style={{cursor:'pointer',color:'#fff'}} color="action" />
+      </Badge>
+        </Link>
               <div className={style.emailOut}>
                 <p>kotsevasker0Gmail.com</p>
                 <ExitToAppIcon
@@ -59,11 +64,14 @@ const Header = () => {
                   className={style.exit}
                 />
               </div>
+         
             </div>
           </div>
-
+          
           <UserInform />
+   
         </div>
+       
       ) : null}
     </div>
   );

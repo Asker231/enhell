@@ -102,9 +102,8 @@
 
 .settingHeader>.top_setting>.emailOut{
     display: flex;
-    flex-direction: column;
-    max-height:min-content;
 
+    max-height:min-content;
     gap: 5px;
     justify-content: flex-start;
     align-items: flex-end;

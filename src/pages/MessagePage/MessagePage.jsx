@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Message from '../../components/message/Message';
 import Navigate from '../../components/navigate/Navigate'
+import style from './message.module.css';
 
 const MessagePage = () => {
   return (
-    <div>
-        MessagePage
-     <Link to='/'>назад</Link>
+    <div className={style.messagePage}>
      <Navigate/>
+     <Message/>
     </div>
   )
 }

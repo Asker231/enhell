@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 //import { v4 } from 'uuid';
-import { useDispatch } from 'react-redux';
+//import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 //import { postList } from './post.props'
-import { removePost } from '../../../../redux/postSlice/postSlice';
+//import { removePost } from '../../../../redux/postSlice/postSlice';
 import style from './postlist.module.css';
-import ClearIcon from '@mui/icons-material/Clear';
+//import ClearIcon from '@mui/icons-material/Clear';
 
 const PostList = ({id}) => {
 const lists = useSelector((state)=>state.posts.arr)
-const disp = useDispatch();
+//const disp = useDispatch();
  //const[list]=useState(postList)
 
      return (

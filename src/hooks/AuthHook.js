@@ -5,7 +5,7 @@ export function AuthHook () {
     const {email,id} = useSelector((state)=>state.users)
   
   return {
-      isAuth:true,
+      isAuth:!!email,
       email,
       id,
     };
